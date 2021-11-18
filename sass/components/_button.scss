@@ -11,5 +11,11 @@
 		);
 		border-radius: 30px;
 		color: white;
+		box-shadow: 1px 1px 10px 1px #9b9b9bc2;
+
+		&:#{hover} {
+			filter: brightness(1.1);
+			box-shadow: 1px 1px 10px 1px grey;
+		}
 	}
 }

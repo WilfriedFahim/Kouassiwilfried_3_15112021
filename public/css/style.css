@@ -15,7 +15,11 @@ h1 {
     width: 215px;
     background: linear-gradient(to bottom right, #FF79DA, #9356DC);
     border-radius: 30px;
-    color: white; }
+    color: white;
+    box-shadow: 1px 1px 10px 1px #9b9b9bc2; }
+    .containerButton__button:hover {
+      filter: brightness(1.1);
+      box-shadow: 1px 1px 10px 1px grey; }
 
 .headerHome {
   display: flex;
@@ -23,23 +27,33 @@ h1 {
   justify-content: center;
   align-items: center; }
   .headerHome__logo {
-    margin: 15px; }
+    margin: 15px;
+    margin-left: auto;
+    margin-right: auto; }
 
 .searchForm {
   display: flex;
   justify-content: center;
   padding: 15px 0;
-  margin: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
   border-top-style: outset;
   border-top-color: #dddddd;
   background-color: #eaeaea; }
   .searchForm__wrapicon {
-    padding: 0 15px;
+    padding: 0 15px 0 0;
     color: #353535; }
   .searchForm__location {
     color: #353535;
-    font-weight: 700; }
+    font-weight: 700;
+    font-size: 1.1em; }
+    @media (min-width: 600px) and (max-width: 1024px) {
+      .searchForm__location {
+        font-size: 1.2em; } }
+    @media (min-width: 1024px) {
+      .searchForm__location {
+        font-size: 1.5em; } }
 
 .companyPresentation {
   display: flex;
@@ -54,7 +68,7 @@ h1 {
   .companyPresentation__text {
     margin: 15px 0 30px 0;
     padding: 0px 30px;
-    color: #353535;
-    font-size: 1.2em; }
+    color: grey;
+    font-size: 1.1em; }
 
 /*# sourceMappingURL=style.css.map */
