@@ -1,0 +1,15 @@
+.containerButton {
+	padding: 18px;
+
+	&__button {
+		padding: 15px 20px;
+		width: 215px;
+		background: linear-gradient(
+			to bottom right,
+			$secondaryColor,
+			$primaryColor
+		);
+		border-radius: 30px;
+		color: white;
+	}
+}

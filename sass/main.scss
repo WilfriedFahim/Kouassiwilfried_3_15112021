@@ -1,0 +1,9 @@
+@import "./utils/variables";
+@import "./utils/fonctions";
+@import "./utils/mixins";
+@import "./base/styleForBase";
+@import "./components/button";
+//@import "./layouts/";
+@import "./pages/headerHome";
+@import "./pages/operationHome.scss";
+@import "./pages/restaurantsHome.scss";

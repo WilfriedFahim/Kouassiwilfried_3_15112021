@@ -1,26 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="public/css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="public/css/style.css" />
 		<title>Bienvenue chez ohmyfood</title>
 	</head>
 	<body>
-		<header class="header">
-			<img src="public/images/logo/ohmyfood@2x.svg" alt="" />
+		<header class="headerHome">
+			<img
+				class="headerHome__logo"
+				src="public/images/logo/ohmyfood@2x.svg"
+				alt=""
+			/>
 			<div class="searchForm">
-				<span class="searchForm__wrapicon">Test</span>
-				<input type="search" class="searchForm_input" />
+				<span class="searchForm__wrapicon"
+					><i class="fas fa-map-marker-alt"></i
+				></span>
+				<p class="searchForm__location">Paris, Belleville</p>
 			</div>
-			<div class="compagnyPresentation">
-				<h2>Réservez le menu qui vous convient</h2>
-				<p>
+			<div class="companyPresentation">
+				<h2 class="companyPresentation__title">Réservez le menu qui vous convient</h2>
+				<p class="companyPresentation__text">
 					Découvrez des restaurants d'exception, séléctionnés par nos soins.
 				</p>
-				<p>Explorer nos restaurants</p>
+				<div class="containerButton">
+					<a class="containerButton__button" href="#">Explorer nos restaurants</a>
+				</div>
 			</div>
 		</header>
 	</body>
+	<script
+		src="https://kit.fontawesome.com/998fad871a.js"
+		crossorigin="anonymous"
+	></script>
 </html>
