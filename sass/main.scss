@@ -3,7 +3,7 @@
 @import "./utils/mixins";
 @import "./base/styleForBase";
 @import "./components/button";
-//@import "./layouts/";
+@import "./layouts/breakpoints";
 @import "./pages/headerHome";
 @import "./pages/operationHome.scss";
-@import "./pages/restaurantsHome.scss";
+@import "./pages/restaurantsHome.scss"

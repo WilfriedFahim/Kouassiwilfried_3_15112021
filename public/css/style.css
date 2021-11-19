@@ -48,10 +48,10 @@ h1 {
     color: #353535;
     font-weight: 700;
     font-size: 1.1em; }
-    @media (min-width: 600px) and (max-width: 1024px) {
+    @media screen and (min-width: 599px) and (max-width: 1023px) {
       .searchForm__location {
         font-size: 1.2em; } }
-    @media (min-width: 1024px) {
+    @media screen and (min-width: 1024px) {
       .searchForm__location {
         font-size: 1.5em; } }
 

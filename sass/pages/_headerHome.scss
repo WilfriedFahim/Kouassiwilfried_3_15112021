@@ -32,13 +32,13 @@
 		font-weight: 700;
 		font-size: 1.1em;
 
-		@media (min-width: 600px) and (max-width: 1024px) {
-			font-size: 1.2em;
-		}
+		@include tablet-only {
+            font-size: 1.2em;
+        }
 
-		@media (min-width: 1024px) {
-			font-size: 1.5em;
-		}
+		@include desktop-only {
+            font-size: 1.5em;
+        }
 	}
 }
 
