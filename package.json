@@ -5,7 +5,8 @@
 	"main": "index.html",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+		"sass": "sass --watch ./sass/main.scss:./public/css/style.css",
+		"prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed"
 	},
 	"repository": {
 		"type": "git",
@@ -16,5 +17,10 @@
 	"bugs": {
 		"url": "https://github.com/WilfriedFahim/Kouassiwilfried_3_15112021/issues"
 	},
-	"homepage": "https://github.com/WilfriedFahim/Kouassiwilfried_3_15112021#readme"
+	"homepage": "https://github.com/WilfriedFahim/Kouassiwilfried_3_15112021#readme",
+	"dependencies": {
+		"autoprefixer": "^10.4.0",
+		"postcss": "^8.3.11",
+		"postcss-cli": "^9.0.2"
+	}
 }
