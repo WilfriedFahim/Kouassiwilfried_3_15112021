@@ -64,8 +64,30 @@
 	}
 }
 
+.appetizer {
+	@include tablet-only {
+		margin-right: 15px;
+		width: 47%;
+	}
+
+	@include desktop-only {
+		margin-right: 25px;
+		width: 30%;
+	}
+}
+
 .dishes {
 	margin: 0 15px 15px 15px;
+
+	@include tablet-only {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	@include desktop-only {
+		display: flex;
+		flex-wrap: wrap;
+	}
 
 	&__title {
 		font-weight: 300;
@@ -117,6 +139,7 @@
 		border-radius: 0 15px 15px 0;
 		font-size: 1.5rem;
 		color: white;
+		display: none;
 	}
 }
 
