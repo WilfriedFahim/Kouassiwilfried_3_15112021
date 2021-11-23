@@ -197,6 +197,19 @@ h1 {
     color: grey;
     font-size: 1.1em; }
 
+.mainMenu {
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6; }
+  .mainMenu__header {
+    position: relative;
+    height: 100%;
+    width: 100%; }
+    .mainMenu__header img {
+      width: 100%;
+      filter: brightness(1.1);
+      object-fit: cover; }
+
 .headerMenu {
   display: flex;
   align-items: center;
@@ -216,18 +229,6 @@ h1 {
   margin-left: -30px;
   font-size: 0.8rem; }
 
-.mainMenu {
-  display: flex;
-  flex-direction: column; }
-  .mainMenu__header {
-    position: relative;
-    height: 100%;
-    width: 100%; }
-    .mainMenu__header img {
-      width: 100%;
-      filter: brightness(1.1);
-      object-fit: cover; }
-
 .listMenu {
   z-index: 1;
   margin-top: -50px;
@@ -240,11 +241,71 @@ h1 {
     padding-left: 20px;
     padding-top: 30px;
     padding-right: 40px;
-    font-size: 0.8rem; }
+    font-size: 0.9rem; }
     .listMenu__title .fa-heart {
       font-size: 25px;
       color: #f6f6f6;
       text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000; }
+
+.dishes {
+  margin: 0 15px 15px 15px; }
+  .dishes__title {
+    font-weight: 300;
+    margin-bottom: 3px;
+    padding-top: 25px;
+    content: "";
+    padding-left: 5px; }
+  .dishes span {
+    background: #99E2D0;
+    height: 0.2em;
+    display: block;
+    position: relative;
+    width: 3rem;
+    left: 5px;
+    margin-bottom: 15px; }
+
+.dishesList {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  height: 70px;
+  box-shadow: 1px 1px 10px 1px #9b9b9b48; }
+  .dishesList .erratum {
+    width: 100%; }
+  .dishesList__title {
+    padding: 5px 15px 5px 10px;
+    font-size: 1.1rem; }
+  .dishesList__infos {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px 5px 10px; }
+  .dishesList__choice {
+    background-color: #99E2D0;
+    padding: 20px;
+    height: 100%;
+    border-radius: 0 15px 15px 0;
+    font-size: 1.5rem;
+    color: white; }
+
+.info {
+  font-weight: 300;
+  font-size: 1rem; }
+
+.price {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  font-weight: 600;
+  color: #353535; }
+
+.menuButton {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px; }
+  .menuButton__text {
+    text-align: center; }
 
 .operation {
   padding: 40px 0; }
