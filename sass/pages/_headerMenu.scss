@@ -14,6 +14,14 @@
 			width: 100%;
 			filter: brightness(1.1);
 			object-fit: cover;
+
+			@include tablet-only {
+				height: 600px;
+			}
+
+			@include desktop-only {
+				height: 600px;
+			}
 		}
 	}
 }
