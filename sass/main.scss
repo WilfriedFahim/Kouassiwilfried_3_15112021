@@ -1,13 +1,22 @@
+//Import des partiels du dossier utils
 @import "./utils/variables";
 @import "./utils/fonctions";
 @import "./utils/mixins";
+
+//Import des partiels du dossier base
 @import "./base/styleForBase";
+
+//Import des partiels du dossier components
 @import "./components/button";
+
+//Import des partiels du dossier layouts
 @import "./layouts/breakpoints";
 @import "./layouts/step";
 @import "./layouts/cards";
 @import "./layouts/footer";
+
+//Import des partiels du dossier pages
 @import "./pages/headerHome";
 @import "./pages/headerMenu";
 @import "./pages/operationHome.scss";
-@import "./pages/restaurantsHome.scss"
+@import "./pages/restaurantsHome.scss";
