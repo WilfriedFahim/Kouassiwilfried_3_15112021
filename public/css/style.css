@@ -291,7 +291,11 @@ h1 {
 
 .info {
   font-weight: 300;
-  font-size: 1rem; }
+  font-size: 1rem;
+  width: 250px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap; }
 
 .price {
   display: flex;
