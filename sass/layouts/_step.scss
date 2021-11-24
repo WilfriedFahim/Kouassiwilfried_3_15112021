@@ -27,8 +27,12 @@
 	border-radius: 20px;
 	box-shadow: 1px 1px 10px 1px #9b9b9b48;
 
-	&:#{hover}{
-		background-color: #f5edff;       
+	&:hover{
+		background-color: #f5edff;    
+	}
+
+	&:hover &__icon{
+		color: #9356DC;    
 	}
 
 	&__icon {

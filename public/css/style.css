@@ -50,6 +50,8 @@ h1 {
   box-shadow: 1px 1px 10px 1px #9b9b9b48; }
   .step:hover {
     background-color: #f5edff; }
+  .step:hover .step__icon {
+    color: #9356DC; }
   .step__icon {
     padding-left: 15px;
     font-size: 25px;
