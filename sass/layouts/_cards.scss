@@ -46,6 +46,24 @@
 			padding-top: 10px;
 			color: white;
 			text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+		
 		}
+
+		&:hover {
+				animation: progress-heart 1000ms;
+			}
+	}
+}
+
+
+@keyframes progress-heart {
+	0% {
+		transform: scaleY(0);
+		color: $secondaryColor;
+	}
+
+	100% {
+		transform: scaleY(1);
+		color: $primaryColor;
 	}
 }
