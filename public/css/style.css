@@ -91,21 +91,24 @@ h1 {
       .card .containerRes__content p {
         padding-top: 5px; }
     .card .containerRes__like {
-      font-size: 25px;
-      padding-right: 25px;
-      padding-top: 10px;
-      color: white;
-      text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000; }
-    .card .containerRes:hover {
-      animation: progress-heart 1000ms; }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      fill: transparent;
+      stroke: black;
+      stroke-width: 20;
+      cursor: pointer;
+      position: relative; }
+      .card .containerRes__like svg {
+        overflow: visible;
+        width: 1.5rem; }
+      .card .containerRes__like path {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 1550;
+        transform-origin: center; }
+      .card .containerRes__like .heart-main {
+        fill: url(#gradientheart); }
 
-@keyframes progress-heart {
-  0% {
-    transform: scaleY(0);
-    color: #FF79DA; }
-  100% {
-    transform: scaleY(1);
-    color: #9356DC; } }
 .footer {
   background-color: #353535;
   color: white; }
@@ -324,6 +327,9 @@ h1 {
     font-size: 1.5rem;
     color: white;
     display: none; }
+
+.dishesList:hover div:nth-child(2) {
+  display: flex; }
 
 .info {
   font-weight: 300;

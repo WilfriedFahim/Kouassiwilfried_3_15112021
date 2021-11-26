@@ -40,30 +40,41 @@
 			}
 		}
 
+		//&__like {
+		//font-size: 25px;
+		//padding-right: 25px;
+		//padding-top: 10px;
+		//color: white;
+		//text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+		//}
+
 		&__like {
-			font-size: 25px;
-			padding-right: 25px;
-			padding-top: 10px;
-			color: white;
-			text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-		
-		}
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			fill: transparent;
+			stroke: black;
+			stroke-width: 20;
+			cursor: pointer;
+			position: relative;
 
-		&:hover {
-				animation: progress-heart 1000ms;
+			svg {
+				overflow: visible;
+				width: 1.5rem;
+			
+				
 			}
-	}
-}
 
+			path {
+				
+				stroke-dashoffset: 0;
+				stroke-dasharray: 1550;
+				transform-origin: center;
+			}
 
-@keyframes progress-heart {
-	0% {
-		transform: scaleY(0);
-		color: $secondaryColor;
-	}
-
-	100% {
-		transform: scaleY(1);
-		color: $primaryColor;
+			.heart-main {
+				fill: url(#gradientheart);
+			}
+		}
 	}
 }
