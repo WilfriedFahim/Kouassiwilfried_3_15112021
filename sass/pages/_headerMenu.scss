@@ -148,6 +148,12 @@
 	animation: fadeInOpacity 1.1s ease-in-out 1.2s both;
 }
 
+.FadeInMenu4 {
+	opacity: 0;
+	margin-top: 30px;
+	animation: fadeInOpacity 1.2s ease-in-out 1.2s both;
+}
+
 @keyframes fadeInOpacity {
 	0% {
 		opacity: 0;		
@@ -168,6 +174,7 @@
 		font-size: 1.1rem;
 		width: 100%;
 		margin-bottom: 10px;
+		white-space: nowrap;
 	}
 
 	&__info {
