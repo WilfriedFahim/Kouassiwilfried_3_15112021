@@ -127,6 +127,35 @@
 	width: 100%;
 	box-shadow: 1px 1px 10px 1px #9b9b9b48;
 	overflow: hidden;
+	//transition: all ease-in-out 0.35s;
+}
+
+.FadeInMenu1 {
+	opacity: 0;
+	margin-top: 30px;
+	animation: fadeInOpacity .9s ease-in-out 1s both;
+}
+
+.FadeInMenu2 {
+	opacity: 0;
+	margin-top: 30px;
+	animation: fadeInOpacity 1s ease-in-out 1.1s both;
+}
+
+.FadeInMenu3 {
+	opacity: 0;
+	margin-top: 30px;
+	animation: fadeInOpacity 1.1s ease-in-out 1.2s both;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;		
+	}
+	100% {
+		margin-top: 0;
+		opacity: 1;
+	}
 }
 
 .theMenu {
@@ -171,7 +200,7 @@
 		border-radius: 0 15px 15px 0;
 		font-size: 1.5rem;
 		color: white;
-		transition: all ease-in-out 0.35s;
+		transition: transform all ease-in-out 0.35s;
 	}
 }
 
@@ -186,8 +215,6 @@
 		text-overflow: ellipsis;
 	}
 }
-
-
 
 .dishesList:hover .dishesList__infos {
 	transition-duration: 350ms;
