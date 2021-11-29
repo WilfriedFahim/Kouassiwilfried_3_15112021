@@ -9,3 +9,9 @@
 		@content;
 	}
 }
+
+@mixin mini-mobile-only {
+	@media screen and (min-width: map-get($breakpoints, mini-mobile)) {
+		@content;
+	}
+}

@@ -16,6 +16,7 @@
 @import "./layouts/footer";
 
 //Import des partiels du dossier pages
+@import "./pages/loadingSpinner";
 @import "./pages/headerHome";
 @import "./pages/headerMenu";
 @import "./pages/operationHome.scss";

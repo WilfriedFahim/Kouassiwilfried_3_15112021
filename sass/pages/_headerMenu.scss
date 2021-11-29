@@ -75,18 +75,25 @@
 
 .appetizer {
 	@include tablet-only {
-		margin-right: 15px;
+		margin: 0 15px;
 		width: 47%;
+		max-width: 410px;
+		margin-right: auto;
+		margin-left: auto;
 	}
 
 	@include desktop-only {
-		margin-right: 25px;
+		margin: 0 15px;
 		width: 30%;
+		max-width: 410px;
+		margin-right: auto;
+		margin-left: auto;
 	}
 }
 
 .dishes {
 	margin: 0 15px 15px 15px;
+	
 
 	@include tablet-only {
 		display: flex;
@@ -125,15 +132,15 @@
 	border-radius: 15px;
 	height: 70px;
 	width: 100%;
+	max-width: 410px;
 	box-shadow: 1px 1px 10px 1px #9b9b9b48;
 	overflow: hidden;
-	//transition: all ease-in-out 0.35s;
 }
 
 .FadeInMenu1 {
 	opacity: 0;
 	margin-top: 30px;
-	animation: fadeInOpacity .9s ease-in-out 1s both;
+	animation: fadeInOpacity 0.9s ease-in-out 1s both;
 }
 
 .FadeInMenu2 {
@@ -156,7 +163,7 @@
 
 @keyframes fadeInOpacity {
 	0% {
-		opacity: 0;		
+		opacity: 0;
 	}
 	100% {
 		margin-top: 0;
@@ -168,10 +175,10 @@
 	display: flex;
 	flex-direction: column;
 	width: 70%;
-	padding: 5px 10px;
+	padding: 2px 10px;
 
 	&__title {
-		font-size: 1.1rem;
+		font-size: 1rem;
 		width: 100%;
 		margin-bottom: 10px;
 		white-space: nowrap;
@@ -179,6 +186,8 @@
 
 	&__info {
 		width: 100%;
+		font-size: 0.9rem;
+		color: $secondaryColorFont;
 		white-space: nowrap;
 	}
 }
@@ -221,6 +230,10 @@
 		overflow: hidden;
 		text-overflow: ellipsis;
 	}
+
+	& .theMenu h3 {
+		white-space: normal;
+	}
 }
 
 .dishesList:hover .dishesList__infos {
@@ -228,10 +241,6 @@
 	transition-property: transform;
 	transition-timing-function: ease-in-out;
 	width: 100%;
-}
-
-.dishesList:hover .info {
-	///////////////
 }
 
 .fa-check-circle {
