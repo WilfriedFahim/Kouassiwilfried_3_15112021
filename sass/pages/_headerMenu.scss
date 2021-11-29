@@ -124,22 +124,44 @@
 	margin-bottom: 15px;
 	border-radius: 15px;
 	height: 70px;
+	width: 100%;
 	box-shadow: 1px 1px 10px 1px #9b9b9b48;
-	
+	overflow: hidden;
+}
 
-	.erratum {
-		width: 100%;
-	}
+.theMenu {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	padding: 5px 10px;
 
 	&__title {
-		padding: 5px 15px 5px 10px;
 		font-size: 1.1rem;
+		width: 100%;
+		margin-bottom: 10px;
 	}
 
-	&__infos {
+	&__info {
+		width: 100%;
+		white-space: nowrap;
+	}
+}
+
+.priceChoice {
+	display: flex;
+	justify-content: space-between;
+	width: 30%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	right: -65px;
+	transition: all ease-in-out 0.35s;
+
+	&__price {
 		display: flex;
-		justify-content: space-between;
-		padding: 0 15px 5px 10px;
+		align-items: flex-end;
+		margin-bottom: 10px;
+		padding-right: 10px;
 	}
 
 	&__choice {
@@ -149,22 +171,53 @@
 		border-radius: 0 15px 15px 0;
 		font-size: 1.5rem;
 		color: white;
-		display: none;
+		transition: all ease-in-out 0.35s;
 	}
 }
 
-.dishesList:hover div:nth-child(2) {
-	display: flex;
-	
+.dishesList:hover {
+	& div:nth-child(2) {
+		position: relative;
+		right: 0px;
+	}
+
+	& .theMenu p {
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+}
+
+
+
+.dishesList:hover .dishesList__infos {
+	transition-duration: 350ms;
+	transition-property: transform;
+	transition-timing-function: ease-in-out;
+	width: 100%;
+}
+
+.dishesList:hover .info {
+	///////////////
+}
+
+.fa-check-circle {
+	transition-duration: 350ms;
+	transition-property: transform;
+	transition-timing-function: ease-in-out;
+	transform: rotate(-360deg);
+}
+
+.dishesList:hover .fa-check-circle {
+	transition-duration: 350ms;
+	transform: rotate(0);
 }
 
 .info {
 	font-weight: 300;
 	font-size: 1rem;
-	width: 250px;
-	text-overflow: ellipsis;
-	overflow: hidden;
+	width: 15rem;
 	white-space: nowrap;
+	overflow: hidden;
 }
 
 .price {
