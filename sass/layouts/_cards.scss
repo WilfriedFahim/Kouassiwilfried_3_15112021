@@ -68,20 +68,34 @@
 				fill: transparent;
 				stroke: black;
 				position: absolute;
+				z-index: 2;
 			}
 			.heart-second {
 				fill: url(#gradientheart);
 				visibility: hidden;
 				position: absolute;
+				z-index: 1;
 			}
 
 			&:hover :nth-child(1) {
+				stroke: none;
 				visibility: hidden;
-				stroke:none;
 			}
 			&:hover :nth-child(2) {
 				visibility: visible;
+				animation: fadeInOpacityy 0.3s ease-in 0.1s both;
 			}
 		}
+	}
+}
+
+@keyframes fadeInOpacityy {
+	0% {
+		opacity: 0;
+		transform: translateY(5px)
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px)
 	}
 }

@@ -113,17 +113,27 @@ h1 {
       .card .containerRes__like .heart-main {
         fill: transparent;
         stroke: black;
-        position: absolute; }
+        position: absolute;
+        z-index: 2; }
       .card .containerRes__like .heart-second {
         fill: url(#gradientheart);
         visibility: hidden;
-        position: absolute; }
+        position: absolute;
+        z-index: 1; }
       .card .containerRes__like:hover :nth-child(1) {
-        visibility: hidden;
-        stroke: none; }
+        stroke: none;
+        visibility: hidden; }
       .card .containerRes__like:hover :nth-child(2) {
-        visibility: visible; }
+        visibility: visible;
+        animation: fadeInOpacityy 0.3s ease-in 0.1s both; }
 
+@keyframes fadeInOpacityy {
+  0% {
+    opacity: 0;
+    transform: translateY(5px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0px); } }
 .footer {
   background-color: #353535;
   color: white; }
