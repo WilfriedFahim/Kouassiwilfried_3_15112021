@@ -119,7 +119,8 @@ h1 {
         visibility: hidden;
         position: absolute; }
       .card .containerRes__like:hover :nth-child(1) {
-        visibility: hidden; }
+        visibility: hidden;
+        stroke: none; }
       .card .containerRes__like:hover :nth-child(2) {
         visibility: visible; }
 
