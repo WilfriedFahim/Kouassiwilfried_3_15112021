@@ -13,7 +13,8 @@ h1 {
   color: black; }
 
 .containerButton {
-  padding: 18px; }
+  padding: 18px;
+  z-index: 102; }
   .containerButton__button {
     padding: 15px 20px;
     width: 215px;
@@ -84,7 +85,8 @@ h1 {
           height: 200px; } }
   .card .containerRes {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    position: relative; }
     .card .containerRes__content {
       padding-top: 10px;
       padding-left: 15px;
@@ -93,13 +95,14 @@ h1 {
         padding-top: 5px; }
     .card .containerRes__like {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       fill: transparent;
-      stroke: black;
       stroke-width: 20;
       cursor: pointer;
-      position: relative; }
+      position: relative;
+      padding-right: 25px; }
       .card .containerRes__like svg {
         overflow: visible;
         width: 1.5rem; }
@@ -108,7 +111,17 @@ h1 {
         stroke-dasharray: 1550;
         transform-origin: center; }
       .card .containerRes__like .heart-main {
-        fill: url(#gradientheart); }
+        fill: transparent;
+        stroke: black;
+        position: absolute; }
+      .card .containerRes__like .heart-second {
+        fill: url(#gradientheart);
+        visibility: hidden;
+        position: absolute; }
+      .card .containerRes__like:hover :nth-child(1) {
+        visibility: hidden; }
+      .card .containerRes__like:hover :nth-child(2) {
+        visibility: visible; }
 
 .footer {
   background-color: #353535;
@@ -170,7 +183,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 101;
   animation: fadeOutOpacity 0.5s ease-in-out 3s both; }
 
 .headerHome {
@@ -186,14 +199,15 @@ h1 {
   0% {
     opacity: 1; }
   100% {
-    opacity: 0; } }
+    opacity: 0;
+    visibility: hidden; } }
 .lettre {
   color: #9356DC;
   font-size: 1.5rem;
   letter-spacing: 15px;
   margin-bottom: 150px;
   animation: flash 1.2s linear infinite; }
-  @media screen and (min-width: 250px) {
+  @media screen and (max-width: 320px) {
     .lettre {
       font-size: 1rem; } }
   @media screen and (min-width: 681px) and (max-width: 1276px) {
@@ -437,6 +451,9 @@ h1 {
   flex-direction: column;
   width: 70%;
   padding: 2px 10px; }
+  @media screen and (max-width: 320px) {
+    .theMenu {
+      width: 60%; } }
   .theMenu__title {
     font-size: 1rem;
     width: 100%;
@@ -447,6 +464,10 @@ h1 {
     font-size: 0.9rem;
     color: #353535;
     white-space: nowrap; }
+    @media screen and (max-width: 320px) {
+      .theMenu__info {
+        overflow: hidden;
+        text-overflow: ellipsis; } }
 
 .priceChoice {
   display: flex;
@@ -457,6 +478,9 @@ h1 {
   position: relative;
   right: -65px;
   transition: all ease-in-out 0.35s; }
+  @media screen and (max-width: 320px) {
+    .priceChoice {
+      width: 40%; } }
   .priceChoice__price {
     display: flex;
     align-items: flex-end;

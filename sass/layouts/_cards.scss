@@ -30,6 +30,7 @@
 	.containerRes {
 		display: flex;
 		justify-content: space-between;
+		position: relative;
 
 		&__content {
 			padding-top: 10px;
@@ -41,40 +42,44 @@
 			}
 		}
 
-		//&__like {
-		//font-size: 25px;
-		//padding-right: 25px;
-		//padding-top: 10px;
-		//color: white;
-		//text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-		//}
-
 		&__like {
 			display: flex;
+			flex-direction: column;
 			justify-content: center;
 			align-items: center;
 			fill: transparent;
-			stroke: black;
 			stroke-width: 20;
 			cursor: pointer;
 			position: relative;
+			padding-right: 25px;
 
 			svg {
 				overflow: visible;
 				width: 1.5rem;
-			
-				
 			}
 
 			path {
-				
 				stroke-dashoffset: 0;
 				stroke-dasharray: 1550;
 				transform-origin: center;
 			}
 
 			.heart-main {
+				fill: transparent;
+				stroke: black;
+				position: absolute;
+			}
+			.heart-second {
 				fill: url(#gradientheart);
+				visibility: hidden;
+				position: absolute;
+			}
+
+			&:hover :nth-child(1) {
+				visibility: hidden;
+			}
+			&:hover :nth-child(2) {
+				visibility: visible;
 			}
 		}
 	}
