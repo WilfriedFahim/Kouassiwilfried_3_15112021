@@ -7,12 +7,12 @@
 	justify-content: center;
 	align-items: center;
 	z-index: 1000;
-    animation: fadeOutOpacity .5s ease-in-out 3s both;
+	animation: fadeOutOpacity 0.5s ease-in-out 3s both;
 }
 
 .headerHome {
 	opacity: 0;
-	animation: fadeInOpacity .5s ease-in-out 3s both;
+	animation: fadeInOpacity 0.5s ease-in-out 3s both;
 }
 
 @keyframes fadeInOpacity {
@@ -35,10 +35,14 @@
 
 .lettre {
 	color: $primaryColor;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	letter-spacing: 15px;
 	margin-bottom: 150px;
 	animation: flash 1.2s linear infinite;
+
+	@include mini-mobile-only {
+		font-size: 1rem;
+	}
 
 	@include tablet-only {
 		font-size: 4.5rem;
