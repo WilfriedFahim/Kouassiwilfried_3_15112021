@@ -1,6 +1,5 @@
-# Kouassiwilfried_3_15112021
-
-Projet numéro 3 OPC
+# Projet numéro 3 : Dynamisez une page web avec des animations CSS 
+# Projet Ohmyfood
 
 ➡️ INTRODUCTION : 
 
