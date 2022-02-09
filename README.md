@@ -1,6 +1,4 @@
-# Projet numéro 3 : Dynamisez une page web avec des animations CSS 
-# Projet Ohmyfood
-
+# Projet N°3 : Dynamisez une page web avec des animations CSS (Ohmyfood)
 ➡️ INTRODUCTION : 
 
 Ohmyfood! est une jeune startup qui voudrait s'imposer sur le marché de la restauration. 
